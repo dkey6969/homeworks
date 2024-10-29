@@ -183,13 +183,14 @@ def start_game():
     boss = Boss(name='Minotavr', health=1000, damage=50)
 
     warrior_1 = Warrior(name='Asterix', health=290, damage=10)
-    warrior_2 = Warrior(name='Obelix', health=280, damage=15)
-    magic = Magic(name='Alice', health=270, damage=5)
-    berserk = Berserk(name='Guts', health=220, damage=10)
-    medic = Medic(name='Doc', health=200, damage=5, heal_points=15)
-    hacker = Hacker(name='Hacker', health=250, damage=10)
+    warrior_2 = Warrior(name='Obelix', health=280, damage=5)
+    magic = Magic(name='Alice', health=270, damage=10)
+    berserk = Berserk(name='Guts', health=230, damage=5)
+    medic = Medic(name='Doc', health=150, damage=5, heal_points=20)
+    hacker = Hacker(name='Hacker', health=250, damage=20)
     witcher = Witcher(name='Geralt', health=300, damage=15)
     golem = Golem(name='Rocky', health=300, damage=5)
+    
 
     heroes_list = [warrior_1, medic, warrior_2, magic, berserk, hacker, witcher, golem]
     show_statistics(boss, heroes_list)
